@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>身心障礙服務活動報名表</title>
+</head>
+<body>
+    <h1>身心障礙服務活動報名表</h1>
+
+    <h2>活動詳細資訊</h2>
+    <p>活動名稱：[活動名稱]</p>
+    <p>活動日期：[日期]</p>
+
+    <h2>報名表格</h2>
+    <form action="/submit" method="post">
+        <label for="name">姓名：</label><br>
+        <input type="text" id="name" name="name"><br>
+
+        <label for="gender">性別：</label><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">男性</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">女性</label><br>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">其他</label><br>
+
+        <label for="age">年齡：</label><br>
+        <input type="text" id="age" name="age"><br>
+
+        <label for="phone">聯絡電話：</label><br>
+        <input type="text" id="phone" name="phone"><br>
+
+        <label for="email">電子郵件：</label><br>
+        <input type="email" id="email" name="email"><br>
+
+        <label for="special_needs">特殊需求：</label><br>
+        <textarea id="special_needs" name="special_needs" rows="4" cols="50"></textarea><br>
+
+        <label for="attend">參加活動：</label><br>
+        <input type="radio" id="attend" name="attend" value="yes">
+        <label for="attend">參加</label><br>
+        <input type="radio" id="not_attend" name="attend" value="no">
+        <label for="not_attend">不參加</label><br>
+
+        <input type="submit" value="提交">
+    </form>
+
+    <h2>扫描以下 QR 码进行报名</h2>
+    <img src="registration_form_qrcode.png" alt="QR Code">
+
+</body>
+</html>
